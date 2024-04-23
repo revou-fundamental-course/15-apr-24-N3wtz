@@ -4,6 +4,7 @@ body {
 
 p {
   font-size: 12px;
+  margin-top: 0px;
   margin-bottom: 10px;
 }
 
@@ -11,11 +12,13 @@ h1 {
   text-align: center;
   font-size: 34px;
   margin-top: 0px;
+  margin-bottom: 10px;
 }
 
 .container {
   max-width: 400px;
-  margin: 0 auto;
+  margin: 35px auto;
+  margin-bottom: 10px;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -34,6 +37,7 @@ form {
 
 label {
   margin-bottom: 5px;
+  font-weight: 500;
 }
 
 input[type="number"],
@@ -46,6 +50,7 @@ button {
   padding: 8px 15px;
   width: 120px;
   margin-bottom: 10px;
+  font-weight: 500;
   background-color: #007bff;
   color: #fff;
   border: none;
@@ -70,4 +75,18 @@ button:hover {
 #explanation {
   margin-top: 5px;
   font-size: 14px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  padding: 10px;
+  width: 100%;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: dimgray;
 }
