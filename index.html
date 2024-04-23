@@ -16,41 +16,42 @@
     <div class="container">
       <h1>Konversi Suhu</h1>
       <p>
-        Masukkan temperatur suhu ke dalam kotak dibawah, kemudian tekan tombol
-        Konversi untuk mendapatkan hasil konversi.
-      </p>
-      <p>
-        Anda dapat memilih suhu akan di konversi dalam bentuk celsius atau
-        fahrenheit
+        Masukkan suhu awal dan suhu akhir, kemudian tekan tombol Konversi untuk
+        mendapatkan hasil konversi.
       </p>
       <form id="temperatureForm">
-        <label for="temperatureInput">Masukkan Temperatur:</label>
+        <label for="initialTemperatureInput">Suhu Awal:</label>
         <input
           type="number"
-          id="temperatureInput"
-          placeholder="Masukkan Temperatur"
+          id="initialTemperatureInput"
+          placeholder="Masukkan Suhu Awal"
           required
         />
-
-        <label for="unitSelect">Pilih Unit:</label>
-        <select id="unitSelect">
+        <label for="initialUnitSelect">Satuan Suhu Awal:</label>
+        <select id="initialUnitSelect">
           <option value="celsius">Celsius</option>
           <option value="fahrenheit">Fahrenheit</option>
+          <option value="kelvin">Kelvin</option>
+          <option value="reaumur">Reaumur</option>
         </select>
+        <label for="finalUnitSelect">Satuan Suhu Akhir:</label>
+        <select id="finalUnitSelect">
+          <option value="celsius">Celsius</option>
+          <option value="fahrenheit">Fahrenheit</option>
+          <option value="kelvin">Kelvin</option>
+          <option value="reaumur">Reaumur</option>
+        </select>
+        <div class="tombol">
+          <button type="button" onclick="convertTemperature()">Konversi</button>
+          <button type="button" onclick="resetForm()">Hapus</button>
+          <button type="button" onclick="reverseUnits()">Tukar</button>
+        </div>
       </form>
-
-      <div class="tombol">
-        <button type="button" onclick="convertTemperature()">Konversi</button>
-        <button type="button" onclick="resetForm()">Hapus</button>
-        <button type="button" onclick="reverseUnit()">Tukar</button>
-      </div>
-
       <div id="resultContainer" class="result-container">
         <p id="result"></p>
         <p id="explanation"></p>
       </div>
     </div>
-
     <script src="js/script.js"></script>
   </body>
 </html>
