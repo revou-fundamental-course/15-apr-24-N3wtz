@@ -149,3 +149,11 @@ function reverseUnits() {
   initialUnitSelect.value = finalUnitSelect.value;
   finalUnitSelect.value = tempUnit;
 }
+
+function resetForm() {
+  document.getElementById("initialTemperatureInput").value = "";
+  document.getElementById("initialUnitSelect").value = "celsius";
+  document.getElementById("finalUnitSelect").value = "fahrenheit";
+  document.getElementById("result").textContent = "";
+  document.getElementById("explanation").textContent = "";
+}
