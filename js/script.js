@@ -141,3 +141,11 @@ function convertTemperature() {
     finalUnit.slice(1);
   explanation.textContent = explanationText;
 }
+
+function reverseUnits() {
+  var initialUnitSelect = document.getElementById("initialUnitSelect");
+  var finalUnitSelect = document.getElementById("finalUnitSelect");
+  var tempUnit = initialUnitSelect.value;
+  initialUnitSelect.value = finalUnitSelect.value;
+  finalUnitSelect.value = tempUnit;
+}
