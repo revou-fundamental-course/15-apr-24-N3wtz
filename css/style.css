@@ -54,8 +54,14 @@ button {
   background-color: #007bff;
   color: #fff;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 390px) {
+  button {
+    width: 100px;
+  }
 }
 
 button:hover {
